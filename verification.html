@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>StayLocal - Guest Verification</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.navbar {
+  background: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1d6b45;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 18px;
+  margin-bottom: 7px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.verify-box {
+  background: #eef7f1;
+  padding: 18px;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.verify-box h3 {
+  color: #1d6b45;
+  margin-bottom: 8px;
+}
+
+.verify-box p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #1d6b45;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.note {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html"
+class="logo">
+StayLocal
+</a>
+
+<a href="booking.html"
+class="back">
+← Back
+</a>
+
+</header>
+
+
+<main class="container">
+
+
+<div class="card">
+
+
+<h1>
+Guest Verification
+</h1>
+
+
+<p class="subtitle">
+
+For the safety of guests and hosts,
+StayLocal requires guests to complete
+identity verification before booking.
+
+</p>
+
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+placeholder="Enter your full name">
+
+
+<label>
+Phone Number
+</label>
+
+<input
+type="tel"
+placeholder="08000000000">
+
+
+<label>
+Government ID Type
+</label>
+
+<select>
+
+<option>
+Select ID type
+</option>
+
+<option>
+National ID
+</option>
+
+<option>
+International Passport
+</option>
+
+<option>
+Driver's Licence
+</option>
+
+</select>
+
+
+<label>
+Government ID
+</label>
+
+<input
+type="text"
+placeholder="Enter test ID information">
+
+
+<div class="verify-box">
+
+<h3>
+📷 Live Selfie Verification
+</h3>
+
+<p>
+
+In the real StayLocal system, guests
+will take a live selfie to confirm their
+identity.
+
+</p>
+
+
+<button class="button">
+Start Selfie Verification
+</button>
+
+</div>
+
+
+<a href="payment.html"
+class="button">
+
+Submit Verification
+
+</a>
+
+
+<p class="note">
+
+Prototype only. Do not enter real
+government ID information.
+
+</p>
+
+
+</div>
+
+
+</main>
+
+
+</body>
+
+</html>
