@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>StayLocal - Affordable Short Stays</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.navbar {
+  background: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1d6b45;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #333;
+}
+
+.hero {
+  background: #1d6b45;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  background: white;
+  color: #1d6b45;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.button.green {
+  background: #145335;
+  color: white;
+}
+
+.section {
+  padding: 50px 6%;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cities {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.city {
+  background: white;
+  padding: 35px 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.step {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.step-number {
+  width: 45px;
+  height: 45px;
+  background: #1d6b45;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-weight: bold;
+}
+
+.footer {
+  background: #17231c;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+@media (max-width: 700px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .cities {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+<div class="logo">
+StayLocal
+</div>
+
+<div class="nav-buttons">
+
+<a href="search.html">
+Find a Property
+</a>
+
+<a href="host-register.html">
+List Your Property
+</a>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<h1>
+Affordable stays. Local hosts.
+</h1>
+
+<p>
+Find comfortable short-stay accommodation
+from trusted local hosts.
+</p>
+
+<a href="search.html" class="button">
+Find a Property
+</a>
+
+<a href="host-register.html" class="button green">
+List Your Property
+</a>
+
+</section>
+
+
+<section class="section">
+
+<h2>
+Popular Cities
+</h2>
+
+<div class="cities">
+
+<div class="city">
+Abuja
+</div>
+
+<div class="city">
+Lagos
+</div>
+
+<div class="city">
+Port Harcourt
+</div>
+
+<div class="city">
+Ibadan
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>
+How StayLocal Works
+</h2>
+
+<div class="steps">
+
+<div class="step">
+
+<div class="step-number">
+1
+</div>
+
+<h3>
+Find a stay
+</h3>
+
+<p>
+Search for affordable rooms,
+apartments and houses in your
+preferred location.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+2
+</div>
+
+<h3>
+Book securely
+</h3>
+
+<p>
+Verify your identity and make
+your booking through StayLocal.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+3
+</div>
+
+<h3>
+Enjoy your stay
+</h3>
+
+<p>
+Meet your host and enjoy a
+comfortable short stay.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+<p>
+© 2026 StayLocal. All rights reserved.
+</p>
+
+</footer>
+
+
+</body>
+</html>
