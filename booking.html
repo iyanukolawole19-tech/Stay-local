@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>StayLocal - Booking</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.navbar {
+  background: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1d6b45;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.property {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 130px;
+  height: 100px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  border-radius: 7px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.property h2 {
+  font-size: 19px;
+  margin-bottom: 7px;
+}
+
+.property p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.detail {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.detail strong {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.detail span {
+  color: #555;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+  color: #555;
+}
+
+.total {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.notice {
+  background: #eef7f1;
+  color: #35634a;
+  padding: 15px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.continue {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background: #1d6b45;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+@media (max-width: 750px) {
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .property {
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 100%;
+    height: 150px;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html"
+class="logo">
+StayLocal
+</a>
+
+<a href="property.html"
+class="back">
+← Back
+</a>
+
+</header>
+
+
+<main class="container">
+
+
+<h1>
+Confirm Your Booking
+</h1>
+
+
+<div class="layout">
+
+
+<div>
+
+
+<div class="card">
+
+
+<div class="property">
+
+<div class="photo">
+Property Photo
+</div>
+
+<div>
+
+<h2>
+Modern 1 Bedroom Apartment
+</h2>
+
+<p>
+📍 Gwarinpa, Abuja
+</p>
+
+<p>
+⭐ 4.8 · 24 reviews
+</p>
+
+</div>
+
+</div>
+
+
+<h2>
+Your Stay
+</h2>
+
+
+<div class="details">
+
+
+<div class="detail">
+
+<strong>
+CHECK-IN
+</strong>
+
+<span>
+25 August 2026
+</span>
+
+</div>
+
+
+<div class="detail">
+
+<strong>
+CHECK-OUT
+</strong>
+
+<span>
+27 August 2026
+</span>
+
+</div>
+
+
+<div class="detail">
+
+<strong>
+GUESTS
+</strong>
+
+<span>
+2 guests
+</span>
+
+</div>
+
+
+<div class="detail">
+
+<strong>
+LENGTH OF STAY
+</strong>
+
+<span>
+2 nights
+</span>
+
+</div>
+
+
+</div>
+
+
+<div class="notice">
+
+🔒 Your payment is protected by
+StayLocal's booking system.
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<div>
+
+
+<div class="card">
+
+<h2>
+Price Details
+</h2>
+
+
+<div class="line">
+
+<span>
+₦15,000 × 2 nights
+</span>
+
+<span>
+₦30,000
+</span>
+
+</div>
+
+
+<div class="line">
+
+<span>
+StayLocal service fee
+</span>
+
+<span>
+₦3,000
+</span>
+
+</div>
+
+
+<div class="total">
+
+<span>
+Total
+</span>
+
+<span>
+₦33,000
+</span>
+
+</div>
+
+
+<a href="verification.html"
+class="continue">
+
+Continue to Verification
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</main>
+
+
+</body>
+
+</html>
