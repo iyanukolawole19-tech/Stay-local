@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>StayLocal - Payment</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.navbar {
+  background: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1d6b45;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.property {
+  background: #eee;
+  height: 140px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.info strong {
+  color: #222;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  color: #555;
+}
+
+.total {
+  border-top: 1px solid #ddd;
+  padding-top: 18px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.amount {
+  color: #1d6b45;
+}
+
+.secure {
+  background: #eef7f1;
+  color: #35634a;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.pay {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-top: 20px;
+  background: #1d6b45;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.note {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html"
+class="logo">
+StayLocal
+</a>
+
+<a href="verification.html"
+class="back">
+← Back
+</a>
+
+</header>
+
+
+<main class="container">
+
+
+<h1>
+Secure Payment
+</h1>
+
+
+<div class="layout">
+
+
+<div class="card">
+
+<div class="property">
+Property Photo
+</div>
+
+
+<h2>
+Modern 1 Bedroom Apartment
+</h2>
+
+<p class="info">
+📍 Gwarinpa, Abuja
+</p>
+
+<p class="info">
+📅 25 August - 27 August 2026
+</p>
+
+<p class="info">
+👥 2 guests
+</p>
+
+
+<div class="secure">
+
+🔒 <strong>StayLocal Protection</strong>
+
+<br><br>
+
+Your payment is held securely according
+to StayLocal's booking policy. The host
+will receive their payout after the guest
+confirms arrival.
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+Payment Summary
+</h2>
+
+
+<div class="price-row">
+
+<span>
+₦15,000 × 2 nights
+</span>
+
+<span>
+₦30,000
+</span>
+
+</div>
+
+
+<div class="price-row">
+
+<span>
+StayLocal service fee
+</span>
+
+<span>
+₦3,000
+</span>
+
+</div>
+
+
+<div class="total">
+
+<span>
+Total
+</span>
+
+<span class="amount">
+₦33,000
+</span>
+
+</div>
+
+
+<a href="confirmation.html"
+class="pay">
+
+Pay ₦33,000
+
+</a>
+
+
+<p class="note">
+
+Prototype payment button.
+Real payment processing will be
+connected later.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</main>
+
+
+</body>
+
+</html>
