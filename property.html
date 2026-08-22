@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>StayLocal - Property Details</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.navbar {
+  background: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  color: #1d6b45;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: 88%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 190px 190px;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.photo {
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+.photo:first-child {
+  grid-row: span 2;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 45px;
+}
+
+.verified {
+  display: inline-block;
+  background: #e4f4eb;
+  color: #1d6b45;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin-bottom: 25px;
+}
+
+.description {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.section {
+  border-top: 1px solid #eee;
+  padding: 25px 0;
+}
+
+.section h2 {
+  margin-bottom: 18px;
+}
+
+.amenities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.amenity {
+  background: #f7f7f7;
+  padding: 13px;
+  border-radius: 7px;
+}
+
+.rules li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.host {
+  background: #f7f7f7;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.booking {
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.price {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1d6b45;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 13px;
+  color: #777;
+  font-weight: normal;
+}
+
+.booking label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+.booking input,
+.booking select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+.book {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background: #1d6b45;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.chat {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  background: white;
+  color: #1d6b45;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #1d6b45;
+  border-radius: 7px;
+}
+
+.note {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+@media (max-width: 750px) {
+
+  .photos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 140px 140px;
+  }
+
+  .photo:first-child {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .container {
+    width: 92%;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .amenities {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html"
+class="logo">
+StayLocal
+</a>
+
+<a href="search.html"
+class="back">
+← Back to properties
+</a>
+
+</header>
+
+
+<main class="container">
+
+
+<div class="photos">
+
+<div class="photo">
+Main Property Photo
+</div>
+
+<div class="photo">
+Bedroom
+</div>
+
+<div class="photo">
+Living Room
+</div>
+
+<div class="photo">
+Kitchen
+</div>
+
+<div class="photo">
+Bathroom
+</div>
+
+</div>
+
+
+<div class="content">
+
+
+<div>
+
+
+<span class="verified">
+✓ Verified Property
+</span>
+
+
+<h1>
+Modern 1 Bedroom Apartment
+</h1>
+
+
+<p class="location">
+📍 Gwarinpa, Abuja, Nigeria
+</p>
+
+
+<p class="rating">
+⭐ 4.8 · 24 reviews
+</p>
+
+
+<p class="description">
+
+Welcome to this comfortable and modern
+one-bedroom apartment in Gwarinpa, Abuja.
+It is suitable for visitors, couples and
+business travellers looking for an affordable
+short stay.
+
+</p>
+
+
+<div class="section">
+
+<h2>
+What this place offers
+</h2>
+
+
+<div class="amenities">
+
+<div class="amenity">
+📶 Free Wi-Fi
+</div>
+
+<div class="amenity">
+❄️ Air Conditioning
+</div>
+
+<div class="amenity">
+📺 Smart TV
+</div>
+
+<div class="amenity">
+🚿 Private Bathroom
+</div>
+
+<div class="amenity">
+🚗 Parking
+</div>
+
+<div class="amenity">
+⚡ Electricity
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>
+House Rules
+</h2>
+
+<ul class="rules">
+
+<li>No parties or events</li>
+
+<li>No smoking inside</li>
+
+<li>Maximum of 2 guests</li>
+
+<li>Check-in from 2:00 PM</li>
+
+<li>Check-out before 12:00 PM</li>
+
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>
+Your Host
+</h2>
+
+<div class="host">
+
+<strong>
+Daniel
+</strong>
+
+<p>
+✓ Verified Host · ⭐ 4.9 rating
+</p>
+
+<p>
+27 completed stays
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>
+Guest Reviews
+</h2>
+
+<p>
+⭐⭐⭐⭐⭐
+</p>
+
+<p class="description">
+
+"The apartment was clean, comfortable
+and exactly as shown in the pictures."
+
+</p>
+
+<p>
+— Chinedu
+</p>
+
+</div>
+
+
+</div>
+
+
+<div>
+
+
+<div class="booking">
+
+<div class="price">
+
+₦15,000
+
+<span>
+/ night
+</span>
+
+</div>
+
+
+<label>
+Check-in
+</label>
+
+<input type="date">
+
+
+<label>
+Check-out
+</label>
+
+<input type="date">
+
+
+<label>
+Guests
+</label>
+
+<select>
+
+<option>
+1 guest
+</option>
+
+<option>
+2 guests
+</option>
+
+</select>
+
+
+<a href="booking.html"
+class="book">
+Book Now
+</a>
+
+
+<a href="#"
+class="chat">
+Chat With Host
+</a>
+
+
+<p class="note">
+You won't be charged yet.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</main>
+
+
+</body>
+
+</html>
