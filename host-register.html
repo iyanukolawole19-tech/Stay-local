@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>StayLocal - Register Your Property</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.navbar {
+  background: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  color: #1d6b45;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 750px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #1d6b45;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.upload {
+  border: 2px dashed #ccc;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.upload p {
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.upload input {
+  border: none;
+  padding: 5px;
+}
+
+.requirements {
+  background: #eef7f1;
+  padding: 18px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.requirements p {
+  margin-bottom: 8px;
+  color: #355b45;
+  font-size: 14px;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  background: #1d6b45;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.notice {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 94%;
+    padding: 10px;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html"
+class="logo">
+StayLocal
+</a>
+
+<a href="index.html"
+class="back">
+← Home
+</a>
+
+</header>
+
+
+<main class="container">
+
+
+<div class="header">
+
+<h1>
+Register Your Property
+</h1>
+
+<p>
+Earn money by offering your available
+room or property to verified StayLocal guests.
+</p>
+
+</div>
+
+
+<form
+action="host-submitted.html"
+method="get">
+
+
+<div class="card">
+
+<h2>
+1. Property Information
+</h2>
+
+
+<label>
+Property Type
+</label>
+
+<select required>
+
+<option value="">
+Select property type
+</option>
+
+<option>
+Private Room
+</option>
+
+<option>
+1 Bedroom Apartment
+</option>
+
+<option>
+2 Bedroom Apartment
+</option>
+
+<option>
+3 Bedroom Apartment
+</option>
+
+<option>
+Full House
+</option>
+
+</select>
+
+
+<label>
+Property Name
+</label>
+
+<input
+type="text"
+placeholder="e.g. Cozy Gwarinpa Apartment"
+required>
+
+
+<label>
+Description
+</label>
+
+<textarea
+placeholder="Tell guests about your property..."
+required></textarea>
+
+
+<div class="row">
+
+
+<div>
+
+<label>
+Price Per Night
+</label>
+
+<input
+type="number"
+placeholder="15000"
+required>
+
+</div>
+
+
+<div>
+
+<label>
+Maximum Guests
+</label>
+
+<input
+type="number"
+placeholder="2"
+required>
+
+</div>
+
+
+</div>
+
+
+<label>
+Amenities
+</label>
+
+<input
+type="text"
+placeholder="Wi-Fi, AC, TV, Parking, etc.">
+
+
+</div>
+
+
+<div class="card">
+
+<h2>
+2. Property Location
+</h2>
+
+
+<label>
+City
+</label>
+
+<select required>
+
+<option value="">
+Select city
+</option>
+
+<option>
+Abuja
+</option>
+
+<option>
+Lagos
+</option>
+
+<option>
+Port Harcourt
+</option>
+
+<option>
+Ibadan
+</option>
+
+<option>
+Kano
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+
+<label>
+Area / Neighborhood
+</label>
+
+<input
+type="text"
+placeholder="e.g. Gwarinpa"
+required>
+
+
+<label>
+Property Address
+</label>
+
+<textarea
+placeholder="Enter the full property address"
+required></textarea>
+
+
+</div>
+
+
+<div class="card">
+
+<h2>
+3. Property Photos
+</h2>
+
+
+<p>
+Upload clear pictures of the property.
+</p>
+
+
+<div class="upload">
+
+<p>
+Main property photos
+</p>
+
+<input
+type="file"
+accept="image/*"
+multiple
+required>
+
+</div>
+
+
+<div class="upload">
+
+<p>
+Optional property video
+</p>
+
+<input
+type="file"
+accept="video/*">
+
+</div>
+
+
+</div>
+
+
+<div class="card">
+
+<h2>
+4. Host Information
+</h2>
+
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+placeholder="Enter your full name"
+required>
+
+
+<label>
+Phone Number
+</label>
+
+<input
+type="tel"
+placeholder="08000000000"
+required>
+
+
+<label>
+Email Address
+</label>
+
+<input
+type="email"
+placeholder="you@example.com"
+required>
+
+
+</div>
+
+
+<div class="card">
+
+<h2>
+5. Verification Documents
+</h2>
+
+
+<label>
+Government ID
+</label>
+
+<div class="upload">
+
+<p>
+Upload your government-issued ID
+</p>
+
+<input
+type="file"
+accept="image/*,.pdf"
+required>
+
+</div>
+
+
+<label>
+Proof of Permission
+</label>
+
+<div class="upload">
+
+<p>
+Upload evidence that you are permitted
+to offer this property for short stay.
+</p>
+
+<input
+type="file"
+accept="image/*,.pdf"
+required>
+
+</div>
+
+
+<div class="requirements">
+
+<p>
+✓ Your identity will be verified.
+</p>
+
+<p>
+✓ Your property address will be reviewed.
+</p>
+
+<p>
+✓ Property photos will be checked.
+</p>
+
+<p>
+✓ Permission to offer the property will be verified.
+</p>
+
+<p>
+✓ Properties are listed only after approval.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="card">
+
+<h2>
+6. Agreement
+</h2>
+
+
+<label>
+
+<input
+type="checkbox"
+required
+style="width:auto; margin-right:8px;">
+
+I confirm that the information I provided
+is accurate and that I have permission to
+offer this property for short stays.
+
+</label>
+
+
+<button
+type="submit"
+class="submit">
+
+Submit Property for Verification
+
+</button>
+
+
+<p class="notice">
+
+StayLocal will review your application before
+the property becomes visible to guests.
+
+</p>
+
+
+</div>
+
+
+</form>
+
+
+</main>
+
+
+</body>
+
+</html>
