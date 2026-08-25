@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>StayLocal - Host Dashboard</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f7f6;
+  color: #222;
+}
+
+.navbar {
+  background: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  color: #1d6b45;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+.welcome {
+  margin-bottom: 25px;
+}
+
+.welcome h1 {
+  margin-bottom: 8px;
+}
+
+.welcome p {
+  color: #666;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.stat-icon {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.stat h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.stat p {
+  color: #777;
+  font-size: 13px;
+}
+
+.section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add {
+  background: #1d6b45;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.property {
+  border: 1px solid #eee;
+  border-radius: 9px;
+  padding: 18px;
+}
+
+.property-top {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.property-photo {
+  width: 130px;
+  height: 100px;
+  background: #ddd;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  text-align: center;
+  font-size: 12px;
+}
+
+.property-info {
+  flex: 1;
+}
+
+.property-info h3 {
+  margin-bottom: 7px;
+}
+
+.property-info p {
+  color: #666;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.pending {
+  display: inline-block;
+  background: #fff4d6;
+  color: #725b19;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.action {
+  padding: 11px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.primary {
+  background: #1d6b45;
+  color: white;
+  border-color: #1d6b45;
+}
+
+.empty {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.menu-item {
+  background: #f7f7f7;
+  padding: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #222;
+}
+
+.menu-item strong {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.menu-item span {
+  color: #777;
+  font-size: 12px;
+}
+
+@media (max-width: 750px) {
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .property-top {
+    align-items: flex-start;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .property-top {
+    flex-direction: column;
+  }
+
+  .property-photo {
+    width: 100%;
+    height: 150px;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html"
+class="logo">
+StayLocal
+</a>
+
+<a href="index.html"
+class="home">
+← StayLocal Home
+</a>
+
+</header>
+
+
+<main class="container">
+
+
+<div class="welcome">
+
+<h1>
+Welcome, Host 👋
+</h1>
+
+<p>
+Manage your properties, bookings and earnings
+from your StayLocal dashboard.
+</p>
+
+</div>
+
+
+<div class="stats">
+
+
+<div class="stat">
+
+<div class="stat-icon">
+🏠
+</div>
+
+<h3>
+1
+</h3>
+
+<p>
+My Properties
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">
+📅
+</div>
+
+<h3>
+0
+</h3>
+
+<p>
+Upcoming Bookings
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<div class="stat-icon">
+💰
+</div>
+
+<h3>
+₦0
+</h3>
+
+<p>
+Available Earnings
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+<h2>
+My Properties
+</h2>
+
+<a href="host-register.html"
+class="add">
++ Add Property
+</a>
+
+</div>
+
+
+<div class="property">
+
+
+<div class="property-top">
+
+
+<div class="property-photo">
+Property Photo
+</div>
+
+
+<div class="property-info">
+
+<h3>
+Modern 1 Bedroom Apartment
+</h3>
+
+<p>
+📍 Gwarinpa, Abuja
+</p>
+
+<p>
+₦15,000 per night
+</p>
+
+<span class="pending">
+⏳ Pending Verification
+</span>
+
+</div>
+
+
+</div>
+
+
+<div class="actions">
+
+<a href="property.html"
+class="action primary">
+View Property
+</a>
+
+<a href="host-register.html"
+class="action">
+Edit Property
+</a>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<div class="section">
+
+
+<div class="section-title">
+
+<h2>
+Host Tools
+</h2>
+
+</div>
+
+
+<div class="menu">
+
+
+<a href="#"
+class="menu-item">
+
+<strong>
+📅 Bookings
+</strong>
+
+<span>
+Manage guest reservations
+</span>
+
+</a>
+
+
+<a href="#"
+class="menu-item">
+
+<strong>
+💰 Earnings
+</strong>
+
+<span>
+View your payouts
+</span>
+
+</a>
+
+
+<a href="#"
+class="menu-item">
+
+<strong>
+💬 Messages
+</strong>
+
+<span>
+Chat with guests
+</span>
+
+</a>
+
+
+<a href="#"
+class="menu-item">
+
+<strong>
+👤 Profile
+</strong>
+
+<span>
+Manage your account
+</span>
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="section">
+
+
+<h2>
+Application Status
+</h2>
+
+
+<div class="empty">
+
+<p>
+🔍 Your property is currently being reviewed.
+</p>
+
+<p style="margin-top:10px;">
+You will be notified once your property
+has been approved.
+</p>
+
+</div>
+
+
+</div>
+
+
+</main>
+
+
+</body>
+
+</html>
