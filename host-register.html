@@ -229,7 +229,7 @@ Property Type
 <select required>
 
 <option value="">
-Select property type
+<select id="propertyType" required>
 </option>
 
 <option>
@@ -256,7 +256,11 @@ Full House
 
 
 <label>
-Property Name
+<input
+type="text"
+id="propertyName"
+placeholder="e.g. Cozy Gwarinpa Apartment"
+required>
 </label>
 
 <input
@@ -266,7 +270,10 @@ required>
 
 
 <label>
-Description
+<textarea
+id="description"
+placeholder="Tell guests about your property..."
+required></textarea>
 </label>
 
 <textarea
@@ -280,7 +287,11 @@ required></textarea>
 <div>
 
 <label>
-Price Per Night
+<input
+type="number"
+id="pricePerNight"
+placeholder="15000"
+required>
 </label>
 
 <input
@@ -334,7 +345,7 @@ City
 <select required>
 
 <option value="">
-Select city
+<select id="city" required>
 </option>
 
 <option>
@@ -365,7 +376,11 @@ Other
 
 
 <label>
-Area / Neighborhood
+<input
+type="text"
+id="area"
+placeholder="e.g. Gwarinpa"
+required>
 </label>
 
 <input
@@ -375,7 +390,10 @@ required>
 
 
 <label>
-Property Address
+<textarea
+id="location"
+placeholder="Enter the full property address"
+required></textarea>
 </label>
 
 <textarea
@@ -437,7 +455,11 @@ accept="video/*">
 
 
 <label>
-Full Name
+<input
+type="text"
+id="hostName"
+placeholder="Enter your full name"
+required>
 </label>
 
 <input
@@ -447,7 +469,11 @@ required>
 
 
 <label>
-Phone Number
+<input
+type="tel"
+id="hostPhone"
+placeholder="08000000000"
+required>
 </label>
 
 <input
@@ -457,7 +483,11 @@ required>
 
 
 <label>
-Email Address
+<input
+type="email"
+id="hostEmail"
+placeholder="you@example.com"
+required>
 </label>
 
 <input
@@ -588,8 +618,9 @@ the property becomes visible to guests.
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 <script>
-const SUPABASE_URL = "https://sgglqrwtnyfqzqgotudl.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://sgglqrwtnyfqzqgotudl.supabase.co";
 const SUPABASE_KEY = "sb_publishable_vmH7zpHSVdRfUtB77Rm7Cw_7IA-xmAp";
 
 const supabaseClient = supabase.createClient(
@@ -597,6 +628,7 @@ const supabaseClient = supabase.createClient(
   SUPABASE_KEY
 );
 </script>
+  
 </body>
 
 </html>
