@@ -590,6 +590,15 @@ the property becomes visible to guests.
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL = "https://sgglqrwtnyfqzqgotudl.supabase.co/rest/v1/";
+const SUPABASE_KEY = "sb_publishable_vmH7zpHSVdRfUtB77Rm7Cw_7IA-xmAp";
+
+const supabaseClient = supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+</script>
 </body>
 
 </html>
