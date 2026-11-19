@@ -627,7 +627,6 @@ const supabaseClient = supabase.createClient(
   SUPABASE_URL,
   SUPABASE_KEY
 );
-  <script>
 const form = document.getElementById("hostRegistrationForm");
 
 form.addEventListener("submit", async function(event) {
@@ -648,7 +647,7 @@ form.addEventListener("submit", async function(event) {
     try {
         // Save host information
         const { data: host, error: hostError } = await supabaseClient
-            .from("Hosts")
+            .from("host")
             .insert([
                 {
                     name: hostName,
@@ -668,9 +667,9 @@ form.addEventListener("submit", async function(event) {
 
         // Save property information
         const { error: propertyError } = await supabaseClient
-            .from("Properties")
+            .from("properties")
             .insert([
-                {
+                {to
                     host_id: host.id,
                     title: propertyName,
                     description: description,
@@ -700,7 +699,6 @@ form.addEventListener("submit", async function(event) {
     }
 });
   </script>
-</script>
   
 </body>
 
